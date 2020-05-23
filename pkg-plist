@@ -1078,75 +1078,75 @@
 %%FILEBEAT%%@dir /var/db/beats/filebeat/kibana
 %%FILEBEAT%%@dir /var/db/beats/filebeat/kibana/7
 %%FILEBEAT%%@dir /var/db/beats/filebeat/kibana/7/dashboard
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-Kafka-overview.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-Mongodb-overview.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-Postgresql-overview.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-Postgresql-slowlogs.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-apache.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-auditd.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-auth-sudo-commands.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-haproxy-overview.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-icinga-debug-log.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-icinga-main-log.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-icinga-startup-errors.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-iis.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-logstash-log.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-logstash-slowlog.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-mysql.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-nats-overview.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-new-users-and-groups.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-nginx-logs.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-nginx-overview.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-redis.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-ssh-login-attempts.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-syslog.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/Filebeat-traefik-overview.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/filebeat-santa-log-overview.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/osquery-compliance.json
-%%FILEBEAT%%/var/db/beats/filebeat/kibana/7/dashboard/osquery-rootkit.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-Kafka-overview.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-Mongodb-overview.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-Postgresql-overview.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-Postgresql-slowlogs.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-apache.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-auditd.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-auth-sudo-commands.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-haproxy-overview.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-icinga-debug-log.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-icinga-main-log.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-icinga-startup-errors.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-iis.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-logstash-log.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-logstash-slowlog.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-mysql.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-nats-overview.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-new-users-and-groups.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-nginx-logs.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-nginx-overview.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-redis.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-ssh-login-attempts.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-syslog.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-traefik-overview.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/filebeat-santa-log-overview.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/osquery-compliance.json
+%%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/osquery-rootkit.json
 %%HEARTBEAT%%@dir /var/db/beats/heartbeat/kibana
 %%METRICBEAT%%@dir /var/db/beats/metricbeat/kibana/7/dashboard
 %%METRICBEAT%%@dir /var/db/beats/metricbeat/kibana/7
 %%METRICBEAT%%@dir /var/db/beats/metricbeat/kibana
 %%METRICBEAT%%@dir %%DATADIR%%/metricbeat/module/kubernetes/util
 %%METRICBEAT%%@dir %%DATADIR%%/metricbeat/module/system/raid/blockinfo
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-Host-Services-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-aerospike-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-apache-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-ceph-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-consul-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-containers-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-couchbase-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-couchdb-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-docker-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-golang-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-backend.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-frontend.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-http-backend.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-http-frontend.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-http-server.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-visualizations.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-host-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-kafka-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-kubernetes-apiserver.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-kubernetes-controller-manager.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-kubernetes-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-kubernetes-proxy.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-kubernetes-scheduler.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-mongodb-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-mysql-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-nats-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-postgresql-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-prometheus-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-rabbitmq-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-redis-keys.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-redis-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-system-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-uwsgi-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/Metricbeat-zookeeper-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/metricbeat-nginx-overview.json
-%%METRICBEAT%%/var/db/beats/metricbeat/kibana/7/dashboard/metricbeat-windows-service.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-Host-Services-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-aerospike-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-apache-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-ceph-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-consul-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-containers-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-couchbase-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-couchdb-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-docker-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-golang-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-backend.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-frontend.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-http-backend.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-http-frontend.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-http-server.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-haproxy-visualizations.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-host-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-kafka-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-kubernetes-apiserver.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-kubernetes-controller-manager.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-kubernetes-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-kubernetes-proxy.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-kubernetes-scheduler.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-mongodb-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-mysql-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-nats-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-postgresql-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-prometheus-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-rabbitmq-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-redis-keys.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-redis-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-system-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-uwsgi-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-zookeeper-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/metricbeat-nginx-overview.json
+%%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/metricbeat-windows-service.json
 %%AUDITBEAT%%@dir /var/db/beats/auditbeat/kibana
 %%AUDITBEAT%%@dir /var/db/beats/auditbeat/kibana/7
 %%AUDITBEAT%%@dir /var/db/beats/auditbeat/kibana/7/dashboard
@@ -1155,20 +1155,20 @@
 %%PACKETBEAT%%@dir /var/db/beats/packetbeat/kibana/7/dashboard
 %%AUDITBEAT%%@dir %%DATADIR%%/auditbeat/module/file_integrity/monitor
 %%AUDITBEAT%%@dir %%DATADIR%%/auditbeat/module/file_integrity/schema
-%%AUDITBEAT%%/var/db/beats/auditbeat/kibana/7/dashboard/auditbeat-file-integrity.json
-%%AUDITBEAT%%/var/db/beats/auditbeat/kibana/7/dashboard/auditbeat-kernel-executions.json
-%%AUDITBEAT%%/var/db/beats/auditbeat/kibana/7/dashboard/auditbeat-kernel-overview.json
-%%AUDITBEAT%%/var/db/beats/auditbeat/kibana/7/dashboard/auditbeat-kernel-sockets.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-cassandra.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-dhcpv4.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-dns-overview.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-dns-tunneling.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-flows.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-http.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-mongodb.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-mysql.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-nfs.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-overview.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-pgsql.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-thrift.json
-%%PACKETBEAT%%/var/db/beats/packetbeat/kibana/7/dashboard/Packetbeat-tls.json
+%%AUDITBEAT%%%%DATADIR%%/auditbeat/kibana/7/dashboard/auditbeat-file-integrity.json
+%%AUDITBEAT%%%%DATADIR%%/auditbeat/kibana/7/dashboard/auditbeat-kernel-executions.json
+%%AUDITBEAT%%%%DATADIR%%/auditbeat/kibana/7/dashboard/auditbeat-kernel-overview.json
+%%AUDITBEAT%%%%DATADIR%%/auditbeat/kibana/7/dashboard/auditbeat-kernel-sockets.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-cassandra.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-dhcpv4.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-dns-overview.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-dns-tunneling.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-flows.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-http.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-mongodb.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-mysql.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-nfs.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-overview.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-pgsql.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-thrift.json
+%%PACKETBEAT%%%%DATADIR%%/packetbeat/kibana/7/dashboard/Packetbeat-tls.json
