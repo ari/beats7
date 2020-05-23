@@ -14,68 +14,68 @@
 %%METRICBEAT%%@dir /var/db/beats/metricbeat
 %%AUDITBEAT%%@dir /var/db/beats/auditbeat
 %%PACKETBEAT%%@dir /var/db/beats/packetbeat
-%%ETCDIR%%/filebeat.modules.d/apache.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/auditd.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/elasticsearch.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/haproxy.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/icinga.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/iis.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/kafka.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/kibana.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/logstash.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/mongodb.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/mysql.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/nats.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/nginx.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/osquery.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/postgresql.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/redis.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/santa.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/system.yml.disabled
-%%ETCDIR%%/filebeat.modules.d/traefik.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/aerospike.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/apache.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/beat-xpack.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/beat.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/ceph.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/consul.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/couchbase.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/couchdb.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/docker.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/dropwizard.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/elasticsearch-xpack.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/elasticsearch.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/envoyproxy.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/etcd.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/golang.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/graphite.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/haproxy.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/http.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/jolokia.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/kafka.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/kibana-xpack.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/kibana.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/kubernetes.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/kvm.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/logstash-xpack.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/logstash.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/memcached.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/mongodb.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/munin.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/mysql.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/nats.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/nginx.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/php_fpm.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/postgresql.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/prometheus.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/rabbitmq.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/redis.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/system.yml
-%%ETCDIR%%/metricbeat.modules.d/traefik.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/uwsgi.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/vsphere.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/windows.yml.disabled
-%%ETCDIR%%/metricbeat.modules.d/zookeeper.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/apache.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/auditd.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/elasticsearch.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/haproxy.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/icinga.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/iis.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/kafka.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/kibana.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/logstash.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/mongodb.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/mysql.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/nats.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/nginx.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/osquery.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/postgresql.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/redis.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/santa.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/system.yml.disabled
+@sample %%ETCDIR%%/filebeat.modules.d/traefik.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/aerospike.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/apache.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/beat-xpack.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/beat.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/ceph.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/consul.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/couchbase.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/couchdb.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/docker.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/dropwizard.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/elasticsearch-xpack.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/elasticsearch.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/envoyproxy.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/etcd.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/golang.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/graphite.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/haproxy.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/http.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/jolokia.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/kafka.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/kibana-xpack.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/kibana.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/kubernetes.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/kvm.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/logstash-xpack.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/logstash.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/memcached.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/mongodb.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/munin.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/mysql.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/nats.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/nginx.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/php_fpm.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/postgresql.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/prometheus.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/rabbitmq.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/redis.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/system.yml
+@sample %%ETCDIR%%/metricbeat.modules.d/traefik.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/uwsgi.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/vsphere.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/windows.yml.disabled
+@sample %%ETCDIR%%/metricbeat.modules.d/zookeeper.yml.disabled
 %%DATADIR%%/filebeat/module/apache/_meta/config.reference.yml
 %%DATADIR%%/filebeat/module/apache/_meta/config.yml
 %%DATADIR%%/filebeat/module/apache/_meta/docs.asciidoc
