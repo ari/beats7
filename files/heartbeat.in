@@ -21,7 +21,7 @@ rcvar=${name}_enable
 load_rc_config $name
 
 : ${heartbeat_enable:="NO"}
-: ${heartbeat_config:="-path.home /var/db/beats/${name} -path.config %%PREFIX%%/etc"}
+: ${heartbeat_config:="-path.home /var/db/beats/${name} -path.config %%ETCDIR%%"}
 
 # daemon
 start_precmd=heartbeat_prestart

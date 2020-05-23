@@ -21,7 +21,7 @@ rcvar=${name}_enable
 load_rc_config $name
 
 : ${auditbeat_enable:="NO"}
-: ${auditbeat_config:="-path.home /var/db/beats/${name} -path.config %%PREFIX%%/etc"}
+: ${auditbeat_config:="-path.home /var/db/beats/${name} -path.config %%ETCDIR%%"}
 
 # daemon
 start_precmd=auditbeat_prestart

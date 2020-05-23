@@ -21,7 +21,7 @@ rcvar=${name}_enable
 load_rc_config $name
 
 : ${metricbeat_enable:="NO"}
-: ${metricbeat_config:="-path.home /var/db/beats/${name} -path.config %%PREFIX%%/etc"}
+: ${metricbeat_config:="-path.home /var/db/beats/${name} -path.config %%ETCDIR%%"}
 
 # daemon
 start_precmd=metricbeat_prestart

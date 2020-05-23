@@ -21,7 +21,7 @@ rcvar=${name}_enable
 load_rc_config $name
 
 : ${packetbeat_enable:="NO"}
-: ${packetbeat_config:="-path.home /var/db/beats/${name} -path.config %%PREFIX%%/etc"}
+: ${packetbeat_config:="-path.home /var/db/beats/${name} -path.config %%ETCDIR%%"}
 
 # daemon
 start_precmd=packetbeat_prestart

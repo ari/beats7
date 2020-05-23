@@ -3,11 +3,11 @@
 %%METRICBEAT%%sbin/metricbeat
 %%AUDITBEAT%%sbin/auditbeat
 %%AUDITBEAT%%sbin/packetbeat
-%%FILEBEAT%%@sample etc/filebeat.yml.sample
-%%HEARTBEAT%%@sample etc/heartbeat.yml.sample
-%%METRICBEAT%%@sample etc/metricbeat.yml.sample
-%%AUDITBEAT%%@sample etc/auditbeat.yml.sample
-%%PACKETBEAT%%@sample etc/packetbeat.yml.sample
+%%FILEBEAT%%@sample %%ETCDIR%%/filebeat.yml.sample
+%%HEARTBEAT%%@sample %%ETCDIR%%/heartbeat.yml.sample
+%%METRICBEAT%%@sample %%ETCDIR%%/metricbeat.yml.sample
+%%AUDITBEAT%%@sample %%ETCDIR%%/auditbeat.yml.sample
+%%PACKETBEAT%%@sample %%ETCDIR%%/packetbeat.yml.sample
 @dir /var/db/beats
 %%FILEBEAT%%@dir /var/db/beats/filebeat
 %%HEARTBEAT%%@dir /var/db/beats/heartbeat
