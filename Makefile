@@ -55,13 +55,13 @@ do-install:
 .for BEATMOD in ${GO_TARGETS}
 	${INSTALL_PROGRAM} ${GO_WRKSRC}/${BEATMOD}/${BEATMOD} ${STAGEDIR}${PREFIX}/sbin
 	${INSTALL_DATA} ${WRKSRC}/${BEATMOD}/${BEATMOD}.yml ${STAGEDIR}${ETCDIR}/${BEATMOD}.yml.sample
-	(DEST_COMPONENT_PATH=${STAGEDIR}${DATADIR}/${BEATMOD}/kibana; \
-		${MKDIR} $${DEST_COMPONENT_PATH}; \
-		DASHBOARD_FIND_ARGS="-path */_meta/kibana -type d"; \
+	KIBANA_PATH=${STAGEDIR}${DATADIR}/${BEATMOD}/kibana
+	${MKDIR} ${KIBANA_PATH}
+	(DASHBOARD_FIND_ARGS="-path */_meta/kibana -type d"; \
 		DASHBOARD_PATHS=$$(${SETENV} ${FIND} ${WRKSRC}/${BEATMOD} $${DASHBOARD_FIND_ARGS}); \
-		for DASHBOARD_PATH in $${DASHBOARD_PATHS}; \
+		for DASHBOARD_FILE in $${DASHBOARD_PATHS}; \
 		do \
-			(cd $${DASHBOARD_PATH} && ${COPYTREE_SHARE} . $${DEST_COMPONENT_PATH}); \
+			(cd $${DASHBOARD_FILE} && ${COPYTREE_SHARE} . $${KIBANA_PATH}); \
 		done)
 .endfor
 .for BEATMOD in filebeat metricbeat
