@@ -9,7 +9,7 @@ PKGNAMESUFFIX?=	7
 CONFLICTS_INSTALL= zstd
 
 MAINTAINER=	elastic@FreeBSD.org
-COMMENT=	Collect logs locally and send to remote logstash
+COMMENT=	Send logs, network, heartbeat and system data to elasticsearch or logstash
 
 LICENSE=	APACHE20
 
