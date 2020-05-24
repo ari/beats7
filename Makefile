@@ -54,6 +54,7 @@ do-build:
 do-install:
 	${MKDIR} ${STAGEDIR}${ETCDIR}
 .for BEATMOD in ${GO_TARGETS}
+	${MKDIR} ${STAGEDIR}/var/db/beats/${BEATMOD}
 	${INSTALL_PROGRAM} ${GO_WRKSRC}/${BEATMOD}/${BEATMOD} ${STAGEDIR}${PREFIX}/sbin
 	${INSTALL_DATA} ${WRKSRC}/${BEATMOD}/${BEATMOD}.yml ${STAGEDIR}${ETCDIR}/${BEATMOD}.yml.sample
 	${INSTALL_DATA} ${WRKSRC}/${BEATMOD}/${BEATMOD}.reference.yml ${STAGEDIR}${ETCDIR}/${BEATMOD}.yml.reference
