@@ -1075,9 +1075,6 @@
 %%DATADIR%%/auditbeat/module/file_integrity/_meta/kibana/7/dashboard/auditbeat-file-integrity.json
 %%DATADIR%%/auditbeat/module/file_integrity/module.yml
 %%DATADIR%%/auditbeat/module/file_integrity/schema.fbs
-%%FILEBEAT%%@dir /var/db/beats/filebeat/kibana
-%%FILEBEAT%%@dir /var/db/beats/filebeat/kibana/7
-%%FILEBEAT%%@dir /var/db/beats/filebeat/kibana/7/dashboard
 %%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-Kafka-overview.json
 %%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-Mongodb-overview.json
 %%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/Filebeat-Postgresql-overview.json
@@ -1104,10 +1101,6 @@
 %%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/filebeat-santa-log-overview.json
 %%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/osquery-compliance.json
 %%FILEBEAT%%%%DATADIR%%/filebeat/kibana/7/dashboard/osquery-rootkit.json
-%%HEARTBEAT%%@dir /var/db/beats/heartbeat/kibana
-%%METRICBEAT%%@dir /var/db/beats/metricbeat/kibana/7/dashboard
-%%METRICBEAT%%@dir /var/db/beats/metricbeat/kibana/7
-%%METRICBEAT%%@dir /var/db/beats/metricbeat/kibana
 %%METRICBEAT%%@dir %%DATADIR%%/metricbeat/module/kubernetes/util
 %%METRICBEAT%%@dir %%DATADIR%%/metricbeat/module/system/raid/blockinfo
 %%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-Host-Services-overview.json
@@ -1147,12 +1140,6 @@
 %%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/Metricbeat-zookeeper-overview.json
 %%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/metricbeat-nginx-overview.json
 %%METRICBEAT%%%%DATADIR%%/metricbeat/kibana/7/dashboard/metricbeat-windows-service.json
-%%AUDITBEAT%%@dir /var/db/beats/auditbeat/kibana
-%%AUDITBEAT%%@dir /var/db/beats/auditbeat/kibana/7
-%%AUDITBEAT%%@dir /var/db/beats/auditbeat/kibana/7/dashboard
-%%PACKETBEAT%%@dir /var/db/beats/packetbeat/kibana
-%%PACKETBEAT%%@dir /var/db/beats/packetbeat/kibana/7
-%%PACKETBEAT%%@dir /var/db/beats/packetbeat/kibana/7/dashboard
 %%AUDITBEAT%%@dir %%DATADIR%%/auditbeat/module/file_integrity/monitor
 %%AUDITBEAT%%@dir %%DATADIR%%/auditbeat/module/file_integrity/schema
 %%AUDITBEAT%%%%DATADIR%%/auditbeat/kibana/7/dashboard/auditbeat-file-integrity.json
