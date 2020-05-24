@@ -56,6 +56,7 @@ do-install:
 .for BEATMOD in ${GO_TARGETS}
 	${INSTALL_PROGRAM} ${GO_WRKSRC}/${BEATMOD}/${BEATMOD} ${STAGEDIR}${PREFIX}/sbin
 	${INSTALL_DATA} ${WRKSRC}/${BEATMOD}/${BEATMOD}.yml ${STAGEDIR}${ETCDIR}/${BEATMOD}.yml.sample
+	${INSTALL_DATA} ${WRKSRC}/${BEATMOD}/${BEATMOD}.reference.yml ${STAGEDIR}${ETCDIR}/${BEATMOD}.yml.reference
 	(KIBANA_PATH=${STAGEDIR}${DATADIR}/${BEATMOD}/kibana; \
 	        ${MKDIR} $${KIBANA_PATH}; \
 	        DASHBOARD_FIND_ARGS="-path */_meta/kibana -type d"; \

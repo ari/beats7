@@ -8,6 +8,11 @@
 %%METRICBEAT%%@sample %%ETCDIR%%/metricbeat.yml.sample
 %%AUDITBEAT%%@sample %%ETCDIR%%/auditbeat.yml.sample
 %%PACKETBEAT%%@sample %%ETCDIR%%/packetbeat.yml.sample
+%%FILEBEAT%%@sample %%ETCDIR%%/filebeat.yml.reference
+%%HEARTBEAT%%@sample %%ETCDIR%%/heartbeat.yml.reference
+%%METRICBEAT%%@sample %%ETCDIR%%/metricbeat.yml.reference
+%%AUDITBEAT%%@sample %%ETCDIR%%/auditbeat.yml.reference
+%%PACKETBEAT%%@sample %%ETCDIR%%/packetbeat.yml.reference
 @dir /var/db/beats
 %%FILEBEAT%%@dir /var/db/beats/filebeat
 %%HEARTBEAT%%@dir /var/db/beats/heartbeat
