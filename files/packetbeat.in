@@ -15,8 +15,8 @@
 #				Default: %%ETCDIR%%
 # packetbeat_home (str):		home path for sample dashboards
 #				Default: %%DATADIR%%/packetbeat
-# packetbeat_logs (str):		logs path
-#				Default: /var/logs
+# packetbeat_logs (str):		log path
+#				Default: /var/log/beats
 # packetbeat_data (str):		data path
 #				Default: /var/db/beats/packetbeat
 
@@ -29,7 +29,7 @@ load_rc_config $name
 : ${packetbeat_enable:="NO"}
 : ${packetbeat_config:="%%ETCDIR%%"}
 : ${packetbeat_home:="%%DATADIR%%/packetbeat"}
-: ${packetbeat_logs:="/var/logs"}
+: ${packetbeat_logs:="/var/log/beats"}
 : ${packetbeat_data:="/var/db/beats/packetbeat"}
 
 # daemon

@@ -15,8 +15,8 @@
 #				Default: %%ETCDIR%%
 # heartbeat_home (str):		home path for sample dashboards
 #				Default: %%DATADIR%%/heartbeat
-# heartbeat_logs (str):		logs path
-#				Default: /var/logs
+# heartbeat_logs (str):		log path
+#				Default: /var/log/beats
 # heartbeat_data (str):		data path
 #				Default: /var/db/beats/heartbeat
 
@@ -29,7 +29,7 @@ load_rc_config $name
 : ${heartbeat_enable:="NO"}
 : ${heartbeat_config:="%%ETCDIR%%"}
 : ${heartbeat_home:="%%DATADIR%%/heartbeat"}
-: ${heartbeat_logs:="/var/logs"}
+: ${heartbeat_logs:="/var/log/beats"}
 : ${heartbeat_data:="/var/db/beats/heartbeat"}
 
 # daemon

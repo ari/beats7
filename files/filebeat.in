@@ -15,8 +15,8 @@
 #				Default: %%ETCDIR%%
 # filebeat_home (str):		home path for sample dashboards
 #				Default: %%DATADIR%%/filebeat
-# filebeat_logs (str):		logs path
-#				Default: /var/logs
+# filebeat_logs (str):		log path
+#				Default: /var/log/beats
 # filebeat_data (str):		data path
 #				Default: /var/db/beats/filebeat
 
@@ -29,7 +29,7 @@ load_rc_config $name
 : ${filebeat_enable:="NO"}
 : ${filebeat_config:="%%ETCDIR%%"}
 : ${filebeat_home:="%%DATADIR%%/filebeat"}
-: ${filebeat_logs:="/var/logs"}
+: ${filebeat_logs:="/var/log/beats"}
 : ${filebeat_data:="/var/db/beats/filebeat"}
 
 # daemon

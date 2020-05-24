@@ -15,8 +15,8 @@
 #				Default: %%ETCDIR%%
 # auditbeat_home (str):		home path for sample dashboards
 #				Default: %%DATADIR%%/auditbeat
-# auditbeat_logs (str):		logs path
-#				Default: /var/logs
+# auditbeat_logs (str):		log path
+#				Default: /var/log/beats
 # auditbeat_data (str):		data path
 #				Default: /var/db/beats/auditbeat
 
@@ -29,7 +29,7 @@ load_rc_config $name
 : ${auditbeat_enable:="NO"}
 : ${auditbeat_config:="%%ETCDIR%%"}
 : ${auditbeat_home:="%%DATADIR%%/auditbeat"}
-: ${auditbeat_logs:="/var/logs"}
+: ${auditbeat_logs:="/var/log/beats"}
 : ${auditbeat_data:="/var/db/beats/auditbeat"}
 
 # daemon

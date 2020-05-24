@@ -15,8 +15,8 @@
 #				Default: %%ETCDIR%%
 # metricbeat_home (str):		home path for sample dashboards
 #				Default: %%DATADIR%%/metricbeat
-# metricbeat_logs (str):		logs path
-#				Default: /var/logs
+# metricbeat_logs (str):		log path
+#				Default: /var/log/beats
 # metricbeat_data (str):		data path
 #				Default: /var/db/beats/metricbeat
 
@@ -29,7 +29,7 @@ load_rc_config $name
 : ${metricbeat_enable:="NO"}
 : ${metricbeat_config:="%%ETCDIR%%"}
 : ${metricbeat_home:="%%DATADIR%%/metricbeat"}
-: ${metricbeat_logs:="/var/logs"}
+: ${metricbeat_logs:="/var/log/beats"}
 : ${metricbeat_data:="/var/db/beats/metricbeat"}
 
 # daemon
