@@ -1,30 +1,29 @@
-# Created by: Palle Girgensohn <girgen@FreeBSD.org>
-# $FreeBSD: head/sysutils/beats/Makefile 521867 2020-01-02 18:56:15Z glewis $
+# $FreeBSD$
 
 PORTNAME=	beats
 PORTVERSION=	7.6.2
 DISTVERSIONPREFIX=v
 CATEGORIES=	sysutils
 PKGNAMESUFFIX?=	7
-CONFLICTS_INSTALL= zstd
 
 MAINTAINER=	elastic@FreeBSD.org
-COMMENT=	Send logs, network, heartbeat and system data to elasticsearch or logstash
+COMMENT=	Send logs, network, metrics and heartbeat to elasticsearch or logstash
 
 LICENSE=	APACHE20
-
-CONFLICTS=	beats
 
 USES=		gmake go
 USE_GITHUB=	yes
 GH_ACCOUNT=	elastic
 USE_RC_SUBR=	${GO_TARGETS}
 
+CONFLICTS_INSTALL= zstd
+CONFLICTS=	beats
+
 GO_PKGNAME=	github.com/${GH_ACCOUNT}/${GH_PROJECT}
 FIND_ARGS=	"! ( -regex .*/*\.(go|in|log) ) ! -path *test* ! -path *vendor*"
 MAKE_ENV+=	GOBUILD_FLAGS=""
 
-OPTIONS_DEFAULT=FILEBEAT HEARTBEAT METRICBEAT 
+OPTIONS_DEFAULT=FILEBEAT HEARTBEAT METRICBEAT
 OPTIONS_DEFINE=	FILEBEAT HEARTBEAT METRICBEAT AUDITBEAT PACKETBEAT
 OPTIONS_SUB=	yes
 

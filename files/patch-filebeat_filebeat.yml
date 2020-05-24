@@ -1,13 +1,15 @@
 Docker is not supported on FreeBSD
 
---- filebeat.yml	2020-05-24 12:15:43.579892000 +1000
-+++ filebeat.yml.orig	2020-03-26 05:24:22.000000000 +1100
-@@ -179,7 +179,7 @@
+--- filebeat/filebeat.yml.orig	2020-03-25 18:24:22 UTC
++++ filebeat/filebeat.yml
+@@ -179,8 +179,8 @@ output.elasticsearch:
  processors:
    - add_host_metadata: ~
    - add_cloud_metadata: ~
--#  - add_docker_metadata: ~
-+  - add_docker_metadata: ~
-   - add_kubernetes_metadata: ~
-
+-  - add_docker_metadata: ~
+-  - add_kubernetes_metadata: ~
++#  - add_docker_metadata: ~
++#  - add_kubernetes_metadata: ~
+ 
  #================================ Logging =====================================
+ 
