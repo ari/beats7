@@ -10,9 +10,15 @@
 #
 # metricbeat_enable (bool):	Set to YES to enable metricbeat
 # 				Default: NO
-# metricbeat_flags (str):	Extra flags passed to metricbeat
-# metricbeat_conf (str):	metricbeat configuration metric
-#				Default: %%ETCDIR%%/metricbeat.yml
+# metricbeat_flags (str):	Extra flags
+# metricbeat_config (str):	configuration path
+#				Default: %%ETCDIR%%
+# metricbeat_home (str):		home path for sample dashboards
+#				Default: %%DATADIR%%/metricbeat
+# metricbeat_logs (str):		logs path
+#				Default: /var/logs
+# metricbeat_data (str):		data path
+#				Default: /var/db/beats/metricbeat
 
 . /etc/rc.subr
 
@@ -21,13 +27,16 @@ rcvar=${name}_enable
 load_rc_config $name
 
 : ${metricbeat_enable:="NO"}
-: ${metricbeat_config:="-path.home /var/db/beats/${name} -path.config %%ETCDIR%%"}
+: ${metricbeat_config:="%%ETCDIR%%"}
+: ${metricbeat_home:="%%DATADIR%%/metricbeat"}
+: ${metricbeat_logs:="/var/logs"}
+: ${metricbeat_data:="/var/db/beats/metricbeat"}
 
 # daemon
 start_precmd=metricbeat_prestart
 command=/usr/sbin/daemon
 pidfile="/var/run/${name}"
-command_args="-rP ${pidfile} -p ${pidfile}.child %%PREFIX%%/sbin/${name} ${metricbeat_config}"
+command_args="-rP ${pidfile} %%PREFIX%%/sbin/${name} ${metricbeat_flags} -path.config ${metricbeat_config} --path.home ${metricbeat_home} --path.data ${metricbeat_data} --path.logs ${metricbeat_logs}"
 
 metricbeat_prestart() {
 # Have to empty rc_flags so they don't get passed to daemon(8)
