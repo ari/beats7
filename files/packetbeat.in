@@ -12,7 +12,7 @@
 # 				Default: NO
 # packetbeat_flags (str):	Extra flags passed to packetbeat
 # packetbeat_conf (str):	packetbeat configuration file
-#				Default: ${PREFIX}/etc/packetbeat.yml
+#				Default: %%ETCDIR%%/packetbeat.yml
 
 . /etc/rc.subr
 

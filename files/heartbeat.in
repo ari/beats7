@@ -12,7 +12,7 @@
 # 				Default: NO
 # heartbeat_flags (str):	Extra flags passed to heartbeat
 # heartbeat_conf (str):		heartbeat configuration file
-#				Default: ${PREFIX}/etc/heartbeat.yml
+#				Default: %%ETCDIR%%/heartbeat.yml
 
 . /etc/rc.subr
 

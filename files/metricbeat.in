@@ -12,7 +12,7 @@
 # 				Default: NO
 # metricbeat_flags (str):	Extra flags passed to metricbeat
 # metricbeat_conf (str):	metricbeat configuration metric
-#				Default: ${PREFIX}/etc/metricbeat.yml
+#				Default: %%ETCDIR%%/metricbeat.yml
 
 . /etc/rc.subr
 
