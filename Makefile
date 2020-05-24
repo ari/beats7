@@ -52,12 +52,13 @@ do-build:
 .endfor
 
 do-install:
+	${MKDIR} ${STAGEDIR}${ETCDIR}
 .for BEATMOD in ${GO_TARGETS}
 	${INSTALL_PROGRAM} ${GO_WRKSRC}/${BEATMOD}/${BEATMOD} ${STAGEDIR}${PREFIX}/sbin
 	${INSTALL_DATA} ${WRKSRC}/${BEATMOD}/${BEATMOD}.yml ${STAGEDIR}${ETCDIR}/${BEATMOD}.yml.sample
-	KIBANA_PATH=${STAGEDIR}${DATADIR}/${BEATMOD}/kibana
-	${MKDIR} ${KIBANA_PATH}
-	(DASHBOARD_FIND_ARGS="-path */_meta/kibana -type d"; \
+	(KIBANA_PATH=${STAGEDIR}${DATADIR}/${BEATMOD}/kibana; \
+	        ${MKDIR} $${KIBANA_PATH}; \
+	        DASHBOARD_FIND_ARGS="-path */_meta/kibana -type d"; \
 		DASHBOARD_PATHS=$$(${SETENV} ${FIND} ${WRKSRC}/${BEATMOD} $${DASHBOARD_FIND_ARGS}); \
 		for DASHBOARD_FILE in $${DASHBOARD_PATHS}; \
 		do \
